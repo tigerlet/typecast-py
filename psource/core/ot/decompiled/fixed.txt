@@ -1,0 +1,340 @@
+File: fixed.cpython-314.pyc
+Module code: <module>
+
+Disassembly:
+--------------------------------------------------------------------------------
+  0           RESUME                   0
+
+  4           LOAD_CONST               0 ('\nFixed class - Represents 16.16 fixed point numbers used in OpenType fonts\n')
+              STORE_NAME               0 (__doc__)
+
+  9           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST               1 (<code object Fixed at 0x00000194CFC268B0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 9>)
+              MAKE_FUNCTION
+              LOAD_CONST               2 ('Fixed')
+              CALL                     2
+              STORE_NAME               1 (Fixed)
+              LOAD_CONST               3 (None)
+              RETURN_VALUE
+
+Disassembly of <code object Fixed at 0x00000194CFC268B0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 9>:
+  --           MAKE_CELL                0 (__classdict__)
+
+   9           RESUME                   0
+               LOAD_NAME                0 (__name__)
+               STORE_NAME               1 (__module__)
+               LOAD_CONST               0 ('Fixed')
+               STORE_NAME               2 (__qualname__)
+               LOAD_SMALL_INT           9
+               STORE_NAME               3 (__firstlineno__)
+               LOAD_LOCALS
+               STORE_DEREF              0 (__classdict__)
+
+  10           LOAD_CONST               1 ('\nRepresents 16.16 fixed point numbers.\n\nOpenType uses 16.16 fixed point format for certain values:\n- High 16 bits: integer part\n- Low 16 bits: fractional part\n\nExamples:\n    0x00010000 = 1.0\n    0x00008000 = 0.5\n    0x0000C000 = 0.75\n')
+               STORE_NAME               4 (__doc__)
+
+  23           LOAD_NAME                5 (staticmethod)
+
+  24           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               2 (<code object __annotate__ at 0x00000194CFCFE730, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 24>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               3 (<code object float_value at 0x00000194CFD12A60, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 23>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+
+  23           CALL                     0
+
+  24           STORE_NAME               6 (float_value)
+
+  36           LOAD_NAME                5 (staticmethod)
+
+  37           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               4 (<code object __annotate__ at 0x00000194CFCFF530, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 37>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               5 (<code object int_value at 0x00000194CFCFF730, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 36>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+
+  36           CALL                     0
+
+  37           STORE_NAME               7 (int_value)
+
+  49           LOAD_NAME                5 (staticmethod)
+
+  50           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               6 (<code object __annotate__ at 0x00000194D00A5B30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 50>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               7 (<code object read at 0x00000194CFD15E90, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 49>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+
+  49           CALL                     0
+
+  50           STORE_NAME               8 (read)
+
+  63           LOAD_NAME                5 (staticmethod)
+
+  64           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               8 (<code object __annotate__ at 0x00000194CFCFFC30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 64>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               9 (<code object tag_to_string at 0x00000194D00C0480, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 63>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+
+  63           CALL                     0
+
+  64           STORE_NAME               9 (tag_to_string)
+
+  81           LOAD_NAME                5 (staticmethod)
+
+  82           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST              10 (<code object __annotate__ at 0x00000194D00A5C30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 82>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST              11 (<code object string_to_tag at 0x00000194CFC16AD0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 81>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+
+  81           CALL                     0
+
+  82           STORE_NAME              10 (string_to_tag)
+               LOAD_CONST              12 (())
+               STORE_NAME              11 (__static_attributes__)
+               LOAD_FAST_BORROW         0 (__classdict__)
+               STORE_NAME              12 (__classdictcell__)
+               LOAD_CONST              13 (None)
+               RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000194CFCFE730, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 24>:
+  --           COPY_FREE_VARS           1
+
+  24           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('fixed_int')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               LOAD_CONST               2 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 1 (float)
+               BUILD_MAP                2
+               RETURN_VALUE
+
+Disassembly of <code object float_value at 0x00000194CFD12A60, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 23>:
+ 23           RESUME                   0
+
+ 34           LOAD_FAST_BORROW         0 (fixed_int)
+              LOAD_CONST               1 (65536.0)
+              BINARY_OP               11 (/)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000194CFCFF530, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 37>:
+  --           COPY_FREE_VARS           1
+
+  37           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('float_val')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (float)
+               LOAD_CONST               2 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 1 (int)
+               BUILD_MAP                2
+               RETURN_VALUE
+
+Disassembly of <code object int_value at 0x00000194CFCFF730, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 36>:
+ 36           RESUME                   0
+
+ 47           LOAD_GLOBAL              1 (int + NULL)
+              LOAD_FAST_BORROW         0 (float_val)
+              LOAD_CONST               1 (65536)
+              BINARY_OP                5 (*)
+              CALL                     1
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000194D00A5B30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 50>:
+  --           COPY_FREE_VARS           1
+
+  50           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('data')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (bytes)
+               LOAD_CONST               2 ('offset')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 1 (int)
+               LOAD_CONST               3 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 1 (int)
+               BUILD_MAP                3
+               RETURN_VALUE
+
+Disassembly of <code object read at 0x00000194CFD15E90, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 49>:
+ 49           RESUME                   0
+
+ 61           LOAD_GLOBAL              0 (int)
+              LOAD_ATTR                3 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 1 (data, offset)
+              LOAD_FAST_BORROW         1 (offset)
+              LOAD_SMALL_INT           4
+              BINARY_OP                0 (+)
+              BINARY_SLICE
+              LOAD_CONST               1 ('big')
+              LOAD_CONST               2 (True)
+              LOAD_CONST               3 (('byteorder', 'signed'))
+              CALL_KW                  3
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000194CFCFFC30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 64>:
+  --           COPY_FREE_VARS           1
+
+  64           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('tag')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               LOAD_CONST               2 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 1 (str)
+               BUILD_MAP                2
+               RETURN_VALUE
+
+Disassembly of <code object tag_to_string at 0x00000194D00C0480, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 63>:
+ 63           RESUME                   0
+
+ 74           LOAD_GLOBAL              1 (bytes + NULL)
+
+ 75           LOAD_FAST_BORROW         0 (tag)
+              LOAD_SMALL_INT          24
+              BINARY_OP                9 (>>)
+              LOAD_SMALL_INT         255
+              BINARY_OP                1 (&)
+
+ 76           LOAD_FAST_BORROW         0 (tag)
+              LOAD_SMALL_INT          16
+              BINARY_OP                9 (>>)
+              LOAD_SMALL_INT         255
+              BINARY_OP                1 (&)
+
+ 77           LOAD_FAST_BORROW         0 (tag)
+              LOAD_SMALL_INT           8
+              BINARY_OP                9 (>>)
+              LOAD_SMALL_INT         255
+              BINARY_OP                1 (&)
+
+ 78           LOAD_FAST_BORROW         0 (tag)
+              LOAD_SMALL_INT         255
+              BINARY_OP                1 (&)
+
+ 74           BUILD_LIST               4
+              CALL                     1
+
+ 79           LOAD_ATTR                3 (decode + NULL|self)
+              LOAD_CONST               1 ('latin-1')
+              CALL                     1
+
+ 74           RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000194D00A5C30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 82>:
+  --           COPY_FREE_VARS           1
+
+  82           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('s')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (str)
+               LOAD_CONST               2 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 1 (int)
+               BUILD_MAP                2
+               RETURN_VALUE
+
+Disassembly of <code object string_to_tag at 0x00000194CFC16AD0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\fixed.py", line 81>:
+ 81           RESUME                   0
+
+ 92           LOAD_GLOBAL              1 (len + NULL)
+              LOAD_FAST_BORROW         0 (s)
+              CALL                     1
+              LOAD_SMALL_INT           4
+              COMPARE_OP             119 (bool(!=))
+              POP_JUMP_IF_FALSE       16 (to L1)
+              NOT_TAKEN
+
+ 93           LOAD_GLOBAL              3 (ValueError + NULL)
+              LOAD_CONST               1 ("Tag must be exactly 4 characters, got '")
+              LOAD_FAST_BORROW         0 (s)
+              FORMAT_SIMPLE
+              LOAD_CONST               2 ("'")
+              BUILD_STRING             3
+              CALL                     1
+              RAISE_VARARGS            1
+
+ 94   L1:     LOAD_GLOBAL              5 (ord + NULL)
+              LOAD_FAST_BORROW         0 (s)
+              LOAD_SMALL_INT           0
+              BINARY_OP               26 ([])
+              CALL                     1
+              LOAD_SMALL_INT          24
+              BINARY_OP                3 (<<)
+              LOAD_GLOBAL              5 (ord + NULL)
+              LOAD_FAST_BORROW         0 (s)
+              LOAD_SMALL_INT           1
+              BINARY_OP               26 ([])
+              CALL                     1
+              LOAD_SMALL_INT          16
+              BINARY_OP                3 (<<)
+              BINARY_OP                7 (|)
+              LOAD_GLOBAL              5 (ord + NULL)
+              LOAD_FAST_BORROW         0 (s)
+              LOAD_SMALL_INT           2
+              BINARY_OP               26 ([])
+              CALL                     1
+              LOAD_SMALL_INT           8
+              BINARY_OP                3 (<<)
+              BINARY_OP                7 (|)
+              LOAD_GLOBAL              5 (ord + NULL)
+              LOAD_FAST_BORROW         0 (s)
+              LOAD_SMALL_INT           3
+              BINARY_OP               26 ([])
+              CALL                     1
+              BINARY_OP                7 (|)
+              RETURN_VALUE

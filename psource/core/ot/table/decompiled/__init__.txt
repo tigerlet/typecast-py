@@ -1,0 +1,8 @@
+File: __init__.cpython-314.pyc
+Module code: <module>
+
+Disassembly:
+--------------------------------------------------------------------------------
+          RESUME                   0
+          LOAD_CONST               0 (None)
+          RETURN_VALUE

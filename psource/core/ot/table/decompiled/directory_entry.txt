@@ -1,0 +1,258 @@
+File: directory_entry.cpython-314.pyc
+Module code: <module>
+
+Disassembly:
+--------------------------------------------------------------------------------
+  0           RESUME                   0
+
+  4           LOAD_CONST               0 ('\nDirectoryEntry class - Represents an entry in the table directory\n')
+              STORE_NAME               0 (__doc__)
+
+  9           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST               1 (<code object DirectoryEntry at 0x00000184B3D25E90, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 9>)
+              MAKE_FUNCTION
+              LOAD_CONST               2 ('DirectoryEntry')
+              CALL                     2
+              STORE_NAME               1 (DirectoryEntry)
+              LOAD_CONST               3 (None)
+              RETURN_VALUE
+
+Disassembly of <code object DirectoryEntry at 0x00000184B3D25E90, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 9>:
+  --           MAKE_CELL                0 (__classdict__)
+
+   9           RESUME                   0
+               LOAD_NAME                0 (__name__)
+               STORE_NAME               1 (__module__)
+               LOAD_CONST               0 ('DirectoryEntry')
+               STORE_NAME               2 (__qualname__)
+               LOAD_SMALL_INT           9
+               STORE_NAME               3 (__firstlineno__)
+               LOAD_LOCALS
+               STORE_DEREF              0 (__classdict__)
+
+  10           LOAD_CONST               1 ("\nRepresents an entry in the font's table directory.\n\nEach table in the font has a DirectoryEntry that contains:\n- Tag: 4-byte identifier\n- Checksum: Data checksum\n- Offset: Offset to table data from start of file\n- Length: Length of table data\n")
+               STORE_NAME               4 (__doc__)
+
+  20           LOAD_CONST               9 ((0,))
+               LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               2 (<code object __annotate__ at 0x00000184B3D0F530, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 20>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               3 (<code object __init__ at 0x00000184B3E9CF80, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 20>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               SET_FUNCTION_ATTRIBUTE   1 (defaults)
+               STORE_NAME               5 (__init__)
+
+  36           LOAD_CONST               4 (<code object __repr__ at 0x00000184B40D0480, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 36>)
+               MAKE_FUNCTION
+               STORE_NAME               6 (__repr__)
+
+  43           LOAD_CONST               5 (<code object __eq__ at 0x00000184B3D325B0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 43>)
+               MAKE_FUNCTION
+               STORE_NAME               7 (__eq__)
+
+  49           LOAD_CONST               6 (<code object clone at 0x00000184B40CE740, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 49>)
+               MAKE_FUNCTION
+               STORE_NAME               8 (clone)
+               LOAD_CONST               7 (('checksum', 'length', 'offset', 'tag'))
+               STORE_NAME               9 (__static_attributes__)
+               LOAD_FAST_BORROW         0 (__classdict__)
+               STORE_NAME              10 (__classdictcell__)
+               LOAD_CONST               8 (None)
+               RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D0F530, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 20>:
+  --           COPY_FREE_VARS           1
+
+  20           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('data')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (bytes)
+               LOAD_CONST               2 ('offset')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 1 (int)
+               BUILD_MAP                2
+               RETURN_VALUE
+
+Disassembly of <code object __init__ at 0x00000184B3E9CF80, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 20>:
+ 20           RESUME                   0
+
+ 28           LOAD_FAST_BORROW         2 (offset)
+              LOAD_SMALL_INT          16
+              BINARY_OP                0 (+)
+              LOAD_GLOBAL              1 (len + NULL)
+              LOAD_FAST_BORROW         1 (data)
+              CALL                     1
+              COMPARE_OP             148 (bool(>))
+              POP_JUMP_IF_FALSE       15 (to L1)
+              NOT_TAKEN
+
+ 29           LOAD_GLOBAL              3 (ValueError + NULL)
+              LOAD_CONST               1 ('Insufficient data for DirectoryEntry at offset ')
+              LOAD_FAST_BORROW         2 (offset)
+              FORMAT_SIMPLE
+              BUILD_STRING             2
+              CALL                     1
+              RAISE_VARARGS            1
+
+ 31   L1:     LOAD_GLOBAL              4 (int)
+              LOAD_ATTR                7 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 18 (data, offset)
+              LOAD_FAST_BORROW         2 (offset)
+              LOAD_SMALL_INT           4
+              BINARY_OP                0 (+)
+              BINARY_SLICE
+              LOAD_CONST               2 ('big')
+              LOAD_CONST               3 (('byteorder',))
+              CALL_KW                  2
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               4 (tag)
+
+ 32           LOAD_GLOBAL              4 (int)
+              LOAD_ATTR                7 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 18 (data, offset)
+              LOAD_SMALL_INT           4
+              BINARY_OP                0 (+)
+              LOAD_FAST_BORROW         2 (offset)
+              LOAD_SMALL_INT           8
+              BINARY_OP                0 (+)
+              BINARY_SLICE
+              LOAD_CONST               2 ('big')
+              LOAD_CONST               3 (('byteorder',))
+              CALL_KW                  2
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               5 (checksum)
+
+ 33           LOAD_GLOBAL              4 (int)
+              LOAD_ATTR                7 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 18 (data, offset)
+              LOAD_SMALL_INT           8
+              BINARY_OP                0 (+)
+              LOAD_FAST_BORROW         2 (offset)
+              LOAD_SMALL_INT          12
+              BINARY_OP                0 (+)
+              BINARY_SLICE
+              LOAD_CONST               2 ('big')
+              LOAD_CONST               3 (('byteorder',))
+              CALL_KW                  2
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               6 (offset)
+
+ 34           LOAD_GLOBAL              4 (int)
+              LOAD_ATTR                7 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 18 (data, offset)
+              LOAD_SMALL_INT          12
+              BINARY_OP                0 (+)
+              LOAD_FAST_BORROW         2 (offset)
+              LOAD_SMALL_INT          16
+              BINARY_OP                0 (+)
+              BINARY_SLICE
+              LOAD_CONST               2 ('big')
+              LOAD_CONST               3 (('byteorder',))
+              CALL_KW                  2
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               7 (length)
+              LOAD_CONST               4 (None)
+              RETURN_VALUE
+
+Disassembly of <code object __repr__ at 0x00000184B40D0480, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 36>:
+ 36           RESUME                   0
+
+ 38           LOAD_SMALL_INT           1
+              LOAD_CONST               1 (('Fixed',))
+              IMPORT_NAME              0 (fixed)
+              IMPORT_FROM              1 (Fixed)
+              STORE_FAST               1 (Fixed)
+              POP_TOP
+
+ 39           LOAD_FAST_BORROW         1 (Fixed)
+              LOAD_ATTR                5 (tag_to_string + NULL|self)
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                6 (tag)
+              CALL                     1
+              STORE_FAST               2 (tag_str)
+
+ 40           LOAD_CONST               2 ("DirectoryEntry(tag='")
+              LOAD_FAST_BORROW         2 (tag_str)
+              FORMAT_SIMPLE
+              LOAD_CONST               3 ("', checksum=0x")
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                8 (checksum)
+              LOAD_CONST               4 ('08X')
+              FORMAT_WITH_SPEC
+              LOAD_CONST               5 (', offset=')
+
+ 41           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR               10 (offset)
+              FORMAT_SIMPLE
+              LOAD_CONST               6 (', length=')
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR               12 (length)
+              FORMAT_SIMPLE
+              LOAD_CONST               7 (')')
+
+ 40           BUILD_STRING             9
+              RETURN_VALUE
+
+Disassembly of <code object __eq__ at 0x00000184B3D325B0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 43>:
+ 43           RESUME                   0
+
+ 45           LOAD_GLOBAL              1 (isinstance + NULL)
+              LOAD_FAST_BORROW         1 (other)
+              LOAD_GLOBAL              2 (DirectoryEntry)
+              CALL                     2
+              TO_BOOL
+              POP_JUMP_IF_TRUE         3 (to L1)
+              NOT_TAKEN
+
+ 46           LOAD_CONST               1 (False)
+              RETURN_VALUE
+
+ 47   L1:     LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                4 (tag)
+              LOAD_FAST_BORROW         1 (other)
+              LOAD_ATTR                4 (tag)
+              COMPARE_OP              72 (==)
+              RETURN_VALUE
+
+Disassembly of <code object clone at 0x00000184B40CE740, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\directory_entry.py", line 49>:
+ 49           RESUME                   0
+
+ 51           LOAD_GLOBAL              0 (DirectoryEntry)
+              LOAD_ATTR                3 (__new__ + NULL|self)
+              LOAD_GLOBAL              0 (DirectoryEntry)
+              CALL                     1
+              STORE_FAST               1 (entry)
+
+ 52           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                4 (tag)
+              LOAD_FAST_BORROW         1 (entry)
+              STORE_ATTR               2 (tag)
+
+ 53           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                6 (checksum)
+              LOAD_FAST_BORROW         1 (entry)
+              STORE_ATTR               3 (checksum)
+
+ 54           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                8 (offset)
+              LOAD_FAST_BORROW         1 (entry)
+              STORE_ATTR               4 (offset)
+
+ 55           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR               10 (length)
+              LOAD_FAST_BORROW         1 (entry)
+              STORE_ATTR               5 (length)
+
+ 56           LOAD_FAST_BORROW         1 (entry)
+              RETURN_VALUE

@@ -1,0 +1,135 @@
+File: table.cpython-314.pyc
+Module code: <module>
+
+Disassembly:
+--------------------------------------------------------------------------------
+  0           RESUME                   0
+
+  4           LOAD_CONST               0 ('\nTable base class - Base class for all OpenType tables\n')
+              STORE_NAME               0 (__doc__)
+
+  9           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST               1 (<code object Table at 0x00000184B3BBFDF0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 9>)
+              MAKE_FUNCTION
+              LOAD_CONST               2 ('Table')
+              CALL                     2
+              STORE_NAME               1 (Table)
+              LOAD_CONST               3 (None)
+              RETURN_VALUE
+
+Disassembly of <code object Table at 0x00000184B3BBFDF0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 9>:
+  --           MAKE_CELL                0 (__classdict__)
+
+   9           RESUME                   0
+               LOAD_NAME                0 (__name__)
+               STORE_NAME               1 (__module__)
+               LOAD_CONST               0 ('Table')
+               STORE_NAME               2 (__qualname__)
+               LOAD_SMALL_INT           9
+               STORE_NAME               3 (__firstlineno__)
+               LOAD_LOCALS
+               STORE_DEREF              0 (__classdict__)
+
+  10           LOAD_CONST               1 ('\nBase class for all OpenType table types.\n\nEach table in an OpenType font extends this base class.\n')
+               STORE_NAME               4 (__doc__)
+
+  16           LOAD_CONST               2 (<code object __init__ at 0x00000184B3D22B50, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 16>)
+               MAKE_FUNCTION
+               STORE_NAME               5 (__init__)
+
+  25           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               3 (<code object __annotate__ at 0x00000184B3D22C40, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 25>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               4 (<code object get_type at 0x00000184B3D0FC30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 25>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME               6 (get_type)
+
+  34           LOAD_CONST               5 (<code object get_directory_entry at 0x00000184B3D22D30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 34>)
+               MAKE_FUNCTION
+               STORE_NAME               7 (get_directory_entry)
+
+  43           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               6 (<code object __annotate__ at 0x00000184B3D22E20, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 43>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               7 (<code object to_string at 0x00000184B3D0E730, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 43>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME               8 (to_string)
+               LOAD_CONST               8 (('_directory_entry',))
+               STORE_NAME               9 (__static_attributes__)
+               LOAD_FAST_BORROW         0 (__classdict__)
+               STORE_NAME              10 (__classdictcell__)
+               LOAD_CONST               9 (None)
+               RETURN_VALUE
+
+Disassembly of <code object __init__ at 0x00000184B3D22B50, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 16>:
+ 16           RESUME                   0
+
+ 23           LOAD_FAST_BORROW_LOAD_FAST_BORROW 16 (directory_entry, self)
+              STORE_ATTR               0 (_directory_entry)
+              LOAD_CONST               1 (None)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D22C40, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 25>:
+  --           COPY_FREE_VARS           1
+
+  25           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               BUILD_MAP                1
+               RETURN_VALUE
+
+Disassembly of <code object get_type at 0x00000184B3D0FC30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 25>:
+ 25           RESUME                   0
+
+ 32           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                0 (_directory_entry)
+              LOAD_ATTR                2 (tag)
+              RETURN_VALUE
+
+Disassembly of <code object get_directory_entry at 0x00000184B3D22D30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 34>:
+ 34           RESUME                   0
+
+ 41           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                0 (_directory_entry)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D22E20, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 43>:
+  --           COPY_FREE_VARS           1
+
+  43           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (str)
+               BUILD_MAP                1
+               RETURN_VALUE
+
+Disassembly of <code object to_string at 0x00000184B3D0E730, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table.py", line 43>:
+ 43           RESUME                   0
+
+ 50           LOAD_GLOBAL              1 (str + NULL)
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                2 (_directory_entry)
+              CALL                     1
+              RETURN_VALUE

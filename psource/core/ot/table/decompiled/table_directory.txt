@@ -1,0 +1,563 @@
+File: table_directory.cpython-314.pyc
+Module code: <module>
+
+Disassembly:
+--------------------------------------------------------------------------------
+  0           RESUME                   0
+
+  4           LOAD_CONST               0 ('\nTableDirectory class - Represents the table directory in an OpenType font\n')
+              STORE_NAME               0 (__doc__)
+
+  8           LOAD_SMALL_INT           1
+              LOAD_CONST               1 (('DirectoryEntry',))
+              IMPORT_NAME              1 (directory_entry)
+              IMPORT_FROM              2 (DirectoryEntry)
+              STORE_NAME               2 (DirectoryEntry)
+              POP_TOP
+
+  9           LOAD_SMALL_INT           2
+              LOAD_CONST               2 (('Fixed',))
+              IMPORT_NAME              3 (fixed)
+              IMPORT_FROM              4 (Fixed)
+              STORE_NAME               4 (Fixed)
+              POP_TOP
+
+ 12           LOAD_BUILD_CLASS
+              PUSH_NULL
+              LOAD_CONST               3 (<code object TableDirectory at 0x00000184B3B3E0B0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 12>)
+              MAKE_FUNCTION
+              LOAD_CONST               4 ('TableDirectory')
+              CALL                     2
+              STORE_NAME               5 (TableDirectory)
+              LOAD_CONST               5 (None)
+              RETURN_VALUE
+
+Disassembly of <code object TableDirectory at 0x00000184B3B3E0B0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 12>:
+  --           MAKE_CELL                0 (__classdict__)
+
+  12           RESUME                   0
+               LOAD_NAME                0 (__name__)
+               STORE_NAME               1 (__module__)
+               LOAD_CONST               0 ('TableDirectory')
+               STORE_NAME               2 (__qualname__)
+               LOAD_SMALL_INT          12
+               STORE_NAME               3 (__firstlineno__)
+               LOAD_LOCALS
+               STORE_DEREF              0 (__classdict__)
+
+  13           LOAD_CONST               1 ('\nRepresents the table directory section of an OpenType font.\n\nThe table directory contains metadata about all tables in the font,\nfollowed by individual directory entries for each table.\n')
+               STORE_NAME               4 (__doc__)
+
+  20           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               2 (<code object __annotate__ at 0x00000184B3D23000, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 20>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               3 (<code object __init__ at 0x00000184B3ECC5A0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 20>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME               5 (__init__)
+
+  41           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               4 (<code object __annotate__ at 0x00000184B3D0F730, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 41>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               5 (<code object get_entry at 0x00000184B40B5B30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 41>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME               6 (get_entry)
+
+  53           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               6 (<code object __annotate__ at 0x00000184B40B5C30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 53>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               7 (<code object get_entry_by_tag at 0x00000184B3BBDCB0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 53>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME               7 (get_entry_by_tag)
+
+  68           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST               8 (<code object __annotate__ at 0x00000184B3D230F0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 68>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST               9 (<code object get_num_tables at 0x00000184B3D231E0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 68>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME               8 (get_num_tables)
+
+  72           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST              10 (<code object __annotate__ at 0x00000184B3D232D0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 72>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST              11 (<code object get_version at 0x00000184B3D233C0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 72>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME               9 (get_version)
+
+  76           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST              12 (<code object __annotate__ at 0x00000184B3D234B0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 76>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST              13 (<code object get_search_range at 0x00000184B3D235A0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 76>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME              10 (get_search_range)
+
+  80           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST              14 (<code object __annotate__ at 0x00000184B3D23690, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 80>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST              15 (<code object get_entry_selector at 0x00000184B3D23780, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 80>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME              11 (get_entry_selector)
+
+  84           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST              16 (<code object __annotate__ at 0x00000184B3D23960, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 84>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST              17 (<code object get_range_shift at 0x00000184B3D23A50, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 84>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME              12 (get_range_shift)
+
+  88           LOAD_FAST_BORROW         0 (__classdict__)
+               BUILD_TUPLE              1
+               LOAD_CONST              18 (<code object __annotate__ at 0x00000184B3D23B40, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 88>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE   8 (closure)
+               LOAD_CONST              19 (<code object to_string at 0x00000184B3E992D0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 88>)
+               MAKE_FUNCTION
+               SET_FUNCTION_ATTRIBUTE  16 (annotate)
+               STORE_NAME              13 (to_string)
+               LOAD_CONST              20 (('entries', 'entry_selector', 'num_tables', 'range_shift', 'search_range', 'version'))
+               STORE_NAME              14 (__static_attributes__)
+               LOAD_FAST_BORROW         0 (__classdict__)
+               STORE_NAME              15 (__classdictcell__)
+               LOAD_CONST              21 (None)
+               RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D23000, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 20>:
+  --           COPY_FREE_VARS           1
+
+  20           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('data')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (bytes)
+               BUILD_MAP                1
+               RETURN_VALUE
+
+Disassembly of <code object __init__ at 0x00000184B3ECC5A0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 20>:
+ 20           RESUME                   0
+
+ 27           LOAD_GLOBAL              1 (len + NULL)
+              LOAD_FAST_BORROW         1 (data)
+              CALL                     1
+              LOAD_SMALL_INT          12
+              COMPARE_OP              18 (bool(<))
+              POP_JUMP_IF_FALSE       12 (to L1)
+              NOT_TAKEN
+
+ 28           LOAD_GLOBAL              3 (ValueError + NULL)
+              LOAD_CONST               1 ('Insufficient data for TableDirectory header')
+              CALL                     1
+              RAISE_VARARGS            1
+
+ 30   L1:     LOAD_GLOBAL              4 (int)
+              LOAD_ATTR                7 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW         1 (data)
+              LOAD_CONST               2 (slice(0, 4, None))
+              BINARY_OP               26 ([])
+              LOAD_CONST               3 ('big')
+              LOAD_CONST               4 (('byteorder',))
+              CALL_KW                  2
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               4 (version)
+
+ 31           LOAD_GLOBAL              4 (int)
+              LOAD_ATTR                7 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW         1 (data)
+              LOAD_CONST               5 (slice(4, 6, None))
+              BINARY_OP               26 ([])
+              LOAD_CONST               3 ('big')
+              LOAD_CONST               6 (False)
+              LOAD_CONST               7 (('byteorder', 'signed'))
+              CALL_KW                  3
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               5 (num_tables)
+
+ 32           LOAD_GLOBAL              4 (int)
+              LOAD_ATTR                7 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW         1 (data)
+              LOAD_CONST               8 (slice(6, 8, None))
+              BINARY_OP               26 ([])
+              LOAD_CONST               3 ('big')
+              LOAD_CONST               6 (False)
+              LOAD_CONST               7 (('byteorder', 'signed'))
+              CALL_KW                  3
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               6 (search_range)
+
+ 33           LOAD_GLOBAL              4 (int)
+              LOAD_ATTR                7 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW         1 (data)
+              LOAD_CONST               9 (slice(8, 10, None))
+              BINARY_OP               26 ([])
+              LOAD_CONST               3 ('big')
+              LOAD_CONST               6 (False)
+              LOAD_CONST               7 (('byteorder', 'signed'))
+              CALL_KW                  3
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               7 (entry_selector)
+
+ 34           LOAD_GLOBAL              4 (int)
+              LOAD_ATTR                7 (from_bytes + NULL|self)
+              LOAD_FAST_BORROW         1 (data)
+              LOAD_CONST              10 (slice(10, 12, None))
+              BINARY_OP               26 ([])
+              LOAD_CONST               3 ('big')
+              LOAD_CONST               6 (False)
+              LOAD_CONST               7 (('byteorder', 'signed'))
+              CALL_KW                  3
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               8 (range_shift)
+
+ 36           BUILD_LIST               0
+              LOAD_FAST_BORROW         0 (self)
+              STORE_ATTR               9 (entries)
+
+ 37           LOAD_GLOBAL             21 (range + NULL)
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR               10 (num_tables)
+              CALL                     1
+              GET_ITER
+      L2:     FOR_ITER                55 (to L3)
+              STORE_FAST               2 (i)
+
+ 38           LOAD_SMALL_INT          12
+              LOAD_FAST_BORROW         2 (i)
+              LOAD_SMALL_INT          16
+              BINARY_OP                5 (*)
+              BINARY_OP                0 (+)
+              STORE_FAST               3 (entry_offset)
+
+ 39           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR               18 (entries)
+              LOAD_ATTR               23 (append + NULL|self)
+              LOAD_GLOBAL             25 (DirectoryEntry + NULL)
+              LOAD_FAST_BORROW_LOAD_FAST_BORROW 19 (data, entry_offset)
+              CALL                     2
+              CALL                     1
+              POP_TOP
+              JUMP_BACKWARD           57 (to L2)
+
+ 37   L3:     END_FOR
+              POP_ITER
+              LOAD_CONST              11 (None)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D0F730, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 41>:
+  --           COPY_FREE_VARS           1
+
+  41           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('index')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               LOAD_CONST               2 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 1 (DirectoryEntry)
+               BUILD_MAP                2
+               RETURN_VALUE
+
+Disassembly of <code object get_entry at 0x00000184B40B5B30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 41>:
+ 41           RESUME                   0
+
+ 51           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                0 (entries)
+              LOAD_FAST_BORROW         1 (index)
+              BINARY_OP               26 ([])
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B40B5C30, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 53>:
+  --           COPY_FREE_VARS           1
+
+  53           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('tag')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               LOAD_CONST               2 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 1 (DirectoryEntry)
+               BUILD_MAP                2
+               RETURN_VALUE
+
+Disassembly of <code object get_entry_by_tag at 0x00000184B3BBDCB0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 53>:
+ 53           RESUME                   0
+
+ 63           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                0 (entries)
+              GET_ITER
+      L1:     FOR_ITER                24 (to L3)
+              STORE_FAST               2 (entry)
+
+ 64           LOAD_FAST_BORROW         2 (entry)
+              LOAD_ATTR                2 (tag)
+              LOAD_FAST_BORROW         1 (tag)
+              COMPARE_OP              88 (bool(==))
+              POP_JUMP_IF_TRUE         3 (to L2)
+              NOT_TAKEN
+              JUMP_BACKWARD           22 (to L1)
+
+ 65   L2:     LOAD_FAST_BORROW         2 (entry)
+              SWAP                     2
+              POP_TOP
+              RETURN_VALUE
+
+ 63   L3:     END_FOR
+              POP_ITER
+
+ 66           LOAD_CONST               1 (None)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D230F0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 68>:
+  --           COPY_FREE_VARS           1
+
+  68           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               BUILD_MAP                1
+               RETURN_VALUE
+
+Disassembly of <code object get_num_tables at 0x00000184B3D231E0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 68>:
+ 68           RESUME                   0
+
+ 70           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                0 (num_tables)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D232D0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 72>:
+  --           COPY_FREE_VARS           1
+
+  72           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               BUILD_MAP                1
+               RETURN_VALUE
+
+Disassembly of <code object get_version at 0x00000184B3D233C0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 72>:
+ 72           RESUME                   0
+
+ 74           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                0 (version)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D234B0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 76>:
+  --           COPY_FREE_VARS           1
+
+  76           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               BUILD_MAP                1
+               RETURN_VALUE
+
+Disassembly of <code object get_search_range at 0x00000184B3D235A0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 76>:
+ 76           RESUME                   0
+
+ 78           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                0 (search_range)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D23690, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 80>:
+  --           COPY_FREE_VARS           1
+
+  80           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               BUILD_MAP                1
+               RETURN_VALUE
+
+Disassembly of <code object get_entry_selector at 0x00000184B3D23780, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 80>:
+ 80           RESUME                   0
+
+ 82           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                0 (entry_selector)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D23960, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 84>:
+  --           COPY_FREE_VARS           1
+
+  84           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (int)
+               BUILD_MAP                1
+               RETURN_VALUE
+
+Disassembly of <code object get_range_shift at 0x00000184B3D23A50, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 84>:
+ 84           RESUME                   0
+
+ 86           LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                0 (range_shift)
+              RETURN_VALUE
+
+Disassembly of <code object __annotate__ at 0x00000184B3D23B40, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 88>:
+  --           COPY_FREE_VARS           1
+
+  88           RESUME                   0
+               LOAD_FAST_BORROW         0 (format)
+               LOAD_SMALL_INT           2
+               COMPARE_OP             132 (>)
+               POP_JUMP_IF_FALSE        3 (to L1)
+               NOT_TAKEN
+               LOAD_COMMON_CONSTANT     1 (NotImplementedError)
+               RAISE_VARARGS            1
+       L1:     LOAD_CONST               1 ('return')
+               LOAD_DEREF               1 (__classdict__)
+               LOAD_FROM_DICT_OR_GLOBALS 0 (str)
+               BUILD_MAP                1
+               RETURN_VALUE
+
+Disassembly of <code object to_string at 0x00000184B3E992D0, file "C:\Users\xqxym\Desktop\typecast.new\psource\core\ot\table\table_directory.py", line 88>:
+ 88           RESUME                   0
+
+ 91           LOAD_CONST               1 ('Offset Table')
+
+ 92           LOAD_CONST               2 ('------ -----')
+
+ 93           LOAD_CONST               3 ('  sfnt version:     ')
+              LOAD_GLOBAL              0 (Fixed)
+              LOAD_ATTR                2 (float_value)
+              PUSH_NULL
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                4 (version)
+              CALL                     1
+              FORMAT_SIMPLE
+              BUILD_STRING             2
+
+ 94           LOAD_CONST               4 ('  numTables =       ')
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                6 (num_tables)
+              FORMAT_SIMPLE
+              BUILD_STRING             2
+
+ 95           LOAD_CONST               5 ('  searchRange =     ')
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR                8 (search_range)
+              FORMAT_SIMPLE
+              BUILD_STRING             2
+
+ 96           LOAD_CONST               6 ('  entrySelector =   ')
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR               10 (entry_selector)
+              FORMAT_SIMPLE
+              BUILD_STRING             2
+
+ 97           LOAD_CONST               7 ('  rangeShift =      ')
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR               12 (range_shift)
+              FORMAT_SIMPLE
+              BUILD_STRING             2
+
+ 98           LOAD_CONST               8 ('')
+
+ 90           BUILD_LIST               8
+              STORE_FAST               1 (lines)
+
+101           LOAD_GLOBAL             15 (enumerate + NULL)
+              LOAD_FAST_BORROW         0 (self)
+              LOAD_ATTR               16 (entries)
+              CALL                     1
+              GET_ITER
+      L1:     FOR_ITER                41 (to L2)
+              UNPACK_SEQUENCE          2
+              STORE_FAST_STORE_FAST   35 (i, entry)
+
+102           LOAD_FAST_BORROW         1 (lines)
+              LOAD_ATTR               19 (append + NULL|self)
+              LOAD_FAST_BORROW         2 (i)
+              FORMAT_SIMPLE
+              LOAD_CONST               9 ('. ')
+              LOAD_FAST_BORROW         3 (entry)
+              LOAD_ATTR               21 (to_string + NULL|self)
+              CALL                     0
+              FORMAT_SIMPLE
+              BUILD_STRING             3
+              CALL                     1
+              POP_TOP
+              JUMP_BACKWARD           43 (to L1)
+
+101   L2:     END_FOR
+              POP_ITER
+
+104           LOAD_CONST              10 ('\n')
+              LOAD_ATTR               23 (join + NULL|self)
+              LOAD_FAST_BORROW         1 (lines)
+              CALL                     1
+              RETURN_VALUE
