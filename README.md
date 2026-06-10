@@ -1,15 +1,15 @@
-# Typecast - OpenType Font Editor
+# TypeLens - OpenType Font Editor
 
 ## Project Overview
 
-**Typecast** is a professional OpenType font viewing and editing tool that supports TTF, TTC, OTF, and DFont font formats. This project is developed in Python with a modern PyQt5 user interface.
-
+**TypeLens** is a professional OpenType font viewing and editing tool that supports TTF, TTC, OTF, and DFont font formats. This project is developed in Python with a modern PyQt6 user interface.
+![example.jpg](example.jpg)
 ## Project Architecture
 
 ### 1. Overall Architecture Design
 
 ```
-Typecast
+TypeLens
 ├── Core Module (psource/core/ot)
 │   ├── OTFontCollection - Font collection management
 │   ├── OTFont - Single font management
@@ -37,9 +37,9 @@ Typecast
 │   ├── GlyphPanel - Glyph panel
 │   ├── TableTreeBuilder - Tree structure builder
 │   └── widgets/ - UI components
-│       ├── CharacterMap - Character map
 │       ├── GlyphToolbar - Edit toolbar
-│       └── GlyphStatusBar - Status bar
+│       ├── GlyphStatusBar - Status bar
+│       └── EditorMenu - Menu system
 │
 └── Export Module (psource/export)
     └── SVGExporter - SVG export implementation
@@ -360,7 +360,7 @@ class SVGExporter:
 ## Technology Stack
 
 - **Language**: Python 3.8+
-- **UI Framework**: PyQt5
+- **UI Framework**: PyQt6
 - **Graphics**: Qt Graphics View Framework
 - **Package Management**: pip
 - **Optional**: numpy (numerical computation), Pillow (image processing)
@@ -496,7 +496,7 @@ pip install -r requirements.txt
 python psource/main.py
 
 # Or use startup script
-python run_typecast.py
+python run_typeLens.py
 
 # Package as executable
 pyinstaller --onefile psource/main.py
@@ -508,32 +508,36 @@ pyinstaller --onefile psource/main.py
 typecast.py/
 ├── psource/               # Python source code
 │   ├── core/              # Core modules
-│   │   ├── ot/           # OpenType parsing
-│   │   │   ├── table/    # Table implementation
-│   │   │   ├── glyph.py  # Glyph class
-│   │   │   ├── point.py  # Point class
-│   │   │   ├── fixed.py  # Fixed-point class
-│   │   │   ├── otfont.py # Font class
-│   │   │   └── otfont_collection.py  # Font collection class
-│   ├── ui/               # UI module
+│   │   └── ot/            # OpenType parsing
+│   │       ├── table/     # Table implementation
+│   │       ├── glyph.py   # Glyph class
+│   │       ├── point.py   # Point class
+│   │       ├── fixed.py   # Fixed-point class
+│   │       ├── otfont.py  # Font class
+│   │       └── otfont_collection.py  # Font collection class
+│   ├── export/            # Export functions
+│   ├── resources/         # Resource files
+│   ├── ui/                # UI module
 │   │   ├── main_window.py
-│   │   ├── glyph_editor.py
-│   │   └── widgets/      # UI components
-│   ├── export/           # Export functions
-│   ├── main.py           # Entry point
-│   └── test.py           # Test script
+│   │   └── widgets/       # UI components
+│   ├── main.py            # Entry point
+│   ├── test.py            # Test script
+│   └── fix_imports.py     # Import fix utilities
 ├── requirements.txt       # Dependencies
-├── run_typecast.py       # Startup script
-└── README.md              # Documentation
+├── run_typeLens.py       # Startup script
+├── simkai.ttf            # Sample font file
+├── README.md             # Documentation
+├── INSTALL.md            # Installation guide
+└── QUICKSTART.md         # Quick start guide
 ```
 
 ## License
 
-This project follows the license of the original Typecast project.
+This project follows the license of the original TypeLens project.
 
 ## References
 
 - [OpenType Specification 1.9](https://docs.microsoft.com/en-us/typography/opentype/spec/)
 - [TrueType Reference Manual](https://developer.apple.com/fonts/TrueType-Reference-Manual/)
-- [Qt Graphics View Framework](https://doc.qt.io/qt-5/graphicsview.html)
-- [PyQt5 Official Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt5/)
+- [Qt Graphics View Framework](https://doc.qt.io/qt-6/graphicsview.html)
+- [PyQt6 Official Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt6/)

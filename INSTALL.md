@@ -1,19 +1,20 @@
-# Typecast Python Installation and Usage Guide
+# TypeLens Python Installation and Usage Guide
 
 ## Directory Structure
 
 ```
-typecast.py/
+TypeLens/
 ├── README.md                 # Complete design documentation
 ├── INSTALL.md               # This installation guide
-├── PROJECT_SUMMARY.md       # Project summary
 ├── QUICKSTART.md            # Quick start guide
-├── CORRECTIONS.md           # Correction records
 ├── requirements.txt          # Python dependencies
+├── simkai.ttf               # Sample font file
 ├── psource/                 # Python source code
 │   ├── __init__.py
 │   ├── main.py              # Main program entry
 │   ├── test.py              # Test script
+│   ├── fix_imports.py       # Import fix utilities
+│   ├── simkai.ttf           # Sample font file
 │   ├── core/                # Core modules
 │   │   ├── __init__.py
 │   │   └── ot/              # OpenType font parsing
@@ -35,34 +36,39 @@ typecast.py/
 │   │           ├── hmtx_table.py     # Horizontal metrics table
 │   │           ├── glyf_table.py      # Glyph table
 │   │           ├── glyf_simple_descript.py  # Simple glyph description
+│   │           ├── glyf_composite_descript.py # Composite glyph description
 │   │           ├── glyph_description.py     # Glyph description base class
 │   │           ├── loca_table.py     # Glyph location table
-│   │           └── ttc_header.py    # TTC header
-│   ├── ui/                  # User interface module
+│   │           ├── ttc_header.py     # TTC header
+│   │           ├── cmap_table.py     # Character mapping table
+│   │           ├── cvt_table.py      # Control value table
+│   │           ├── dsig_table.py     # Digital signature table
+│   │           ├── nam_table.py      # Naming table
+│   │           └── os2_table.py      # OS/2 table
+│   ├── export/               # Export module
 │   │   ├── __init__.py
-│   │   ├── main_window.py    # Main window
-│   │   └── widgets/          # UI components
-│   │       ├── __init__.py
-│   │       ├── glyph_editor.py      # Glyph editor
-│   │       ├── glyph_panel.py       # Glyph panel
-│   │       ├── glyph_toolbar.py     # Edit toolbar
-│   │       ├── glyph_statusbar.py   # Status bar
-│   │       ├── character_map.py     # Character map
-│   │       ├── editor_menu.py       # Menu system
-│   │       └── table_tree_builder.py # Tree structure builder
-│   ├── export/              # Export module
-│   │   ├── __init__.py
-│   │   └── svg_exporter.py  # SVG exporter
-│   └── resources/           # Resource files
-│       └── __init__.py
-└── run_typecast.py          # Startup script
+│   │   └── svg_exporter.py   # SVG exporter
+│   ├── resources/            # Resource files
+│   │   └── __init__.py
+│   └── ui/                   # User interface module
+│       ├── __init__.py
+│       ├── main_window.py    # Main window
+│       └── widgets/          # UI components
+│           ├── __init__.py
+│           ├── editor_menu.py       # Menu system
+│           ├── glyph_editor.py      # Glyph editor
+│           ├── glyph_panel.py       # Glyph panel
+│           ├── glyph_statusbar.py   # Status bar
+│           ├── glyph_toolbar.py     # Edit toolbar
+│           └── table_tree_builder.py # Tree structure builder
+└── run_typeLens.py          # Startup script
 ```
 
 ## System Requirements
 
 - **Python**: 3.8 or higher
 - **Operating System**: Windows, macOS, Linux
-- **Dependencies**: PyQt5
+- **Dependencies**: PyQt6
 
 ## Installation Steps
 
@@ -71,7 +77,7 @@ typecast.py/
 Open terminal (Command Prompt or PowerShell on Windows), navigate to the project directory:
 
 ```bash
-cd c:\Users\xqxym\Desktop\typecast.py
+cd c:\Users\Desktop\TypeLens
 ```
 
 Install dependencies:
@@ -83,7 +89,7 @@ pip install -r requirements.txt
 Or:
 
 ```bash
-pip install PyQt5
+pip install PyQt6
 ```
 
 ### 2. Verify Installation
@@ -109,7 +115,7 @@ python psource/main.py
 #### Method 2: Use Startup Script
 
 ```bash
-python run_typecast.py
+python run_typeLens.py
 ```
 
 ## Feature Description
@@ -182,24 +188,24 @@ python run_typecast.py
 
 ## Troubleshooting
 
-### Problem: PyQt5 Installation Failed
+### Problem: PyQt6 Installation Failed
 
 **Solutions**:
 
 Windows:
 ```bash
-pip install PyQt5
+pip install PyQt6
 ```
 
 macOS:
 ```bash
-brew install pyqt5
-pip install pyqt5
+brew install pyqt6
+pip install pyqt6
 ```
 
 Linux (Ubuntu/Debian):
 ```bash
-sudo apt-get install python3-pyqt5
+sudo apt-get install python3-pyqt6
 ```
 
 ### Problem: Cannot Open Font File
@@ -256,7 +262,7 @@ class NewTable(Table):
 
 ## License
 
-This project follows the license of the original Typecast project.
+This project follows the license of the original TypeLens project.
 
 ## Contact and Feedback
 
@@ -268,10 +274,10 @@ If you encounter any issues or have suggestions, please provide feedback through
 ## References
 
 - [OpenType Specification](https://docs.microsoft.com/en-us/typography/opentype/spec/)
-- [PyQt5 Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt5/)
+- [PyQt6 Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt6/)
 - [TrueType Reference Manual](https://developer.apple.com/fonts/TrueType-Reference-Manual/)
 
 ---
 
 **Version**: 1.0.0
-**Last Updated**: 2026-05-24
+**Last Updated**: 2026-06-10

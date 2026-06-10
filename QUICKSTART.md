@@ -1,4 +1,4 @@
-# Typecast Quick Start Guide
+# TypeLens Quick Start Guide
 
 ## 🚀 Quick Start
 
@@ -10,7 +10,7 @@ pip install -r requirements.txt
 python psource/main.py
 
 # Or use the startup script
-python run_typecast.py
+python run_TypeLens.py
 ```
 
 ## 📖 Basic Operations
@@ -54,9 +54,9 @@ python run_typecast.py
 
 ## 🛠️ Troubleshooting
 
-### PyQt5 Installation Failed
+### PyQt6 Installation Failed
 ```bash
-pip install PyQt5 --no-cache-dir
+pip install PyQt6 --no-cache-dir
 ```
 
 ### Cannot Open Font File
@@ -71,23 +71,26 @@ pip install PyQt5 --no-cache-dir
 ## 📂 Project Structure
 
 ```
-typecast.py/
+TypeLens/
 ├── psource/          # Python source code
 │   ├── core/         # Core modules (OpenType parsing)
-│   ├── ui/           # User interface (main window, editor)
-│   └── export/       # Export functions
+│   │   └── ot/       # OpenType font parsing
+│   │       └── table/# Table implementation
+│   ├── export/       # Export functions
+│   ├── resources/    # Resource files
+│   └── ui/           # User interface (main window, widgets)
 ├── README.md         # Complete design documentation
 ├── INSTALL.md        # Installation guide
-├── PROJECT_SUMMARY.md # Project summary
-└── QUICKSTART.md     # Quick start guide
+├── QUICKSTART.md     # Quick start guide
+├── requirements.txt  # Python dependencies
+├── run_typeLens.py   # Startup script
+└── simkai.ttf        # Sample font file
 ```
 
 ## 📚 More Resources
 
 - **Complete Documentation**: See [README.md](README.md)
 - **Installation Guide**: See [INSTALL.md](INSTALL.md)
-- **Project Summary**: See [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)
-- **Correction Records**: See [CORRECTIONS.md](CORRECTIONS.md)
 
 ## 💡 Tips
 
