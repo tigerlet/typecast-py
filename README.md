@@ -533,7 +533,7 @@ typecast.py/
 
 ## License
 
-This project follows the license of the original TypeLens project.
+MIT
 
 ## Author
 
