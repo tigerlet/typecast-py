@@ -535,6 +535,12 @@ typecast.py/
 
 This project follows the license of the original TypeLens project.
 
+## Author
+
+Yuming Xu
+
+---
+
 ## References
 
 - [OpenType Specification 1.9](https://docs.microsoft.com/en-us/typography/opentype/spec/)
